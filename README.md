@@ -1,4 +1,8 @@
-# 🚀 Reto Billonario 2025: Financial Engineering & AI Bootcamp
+# Reto 2025 - 2026: Financial Engineering & AI Bootcamp
+
+![Python](https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge&logo=python&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 Este repositorio documenta mi camino intensivo de 4 semanas para dominar **Python, Matemáticas Financieras e Inteligencia Artificial**.
 
@@ -9,16 +13,18 @@ Este repositorio documenta mi camino intensivo de 4 semanas para dominar **Pytho
 * **Machine Learning:** Scikit-Learn (Regresión Lineal)
 * **Control de Versiones:** Git & GitHub
 
-## 📂 Módulos del Proyecto
+## 📂 Módulos del Proyecto (¡Haz clic para ver el código!)
 
-### 1. Simulador Financiero (`interes_compuesto.py`)
-Calculadora de interés compuesto que proyecta el crecimiento de capital a largo plazo, permitiendo visualizar el impacto de aportaciones mensuales y tasas de rendimiento.
+### 1. [💰 Simulador Financiero](./interes_compuesto.py)
+Calculadora de interés compuesto que proyecta el crecimiento de capital a largo plazo.
 
-### 2. Análisis de Runway (`grafica_runway.py`)
-Script de visualización de datos que grafica la "pista de despegue" financiera para 2026, detectando puntos críticos de insolvencia y burn-rate.
+### 2. [📉 Análisis de Runway](./grafica_runway.py)
+Script de visualización que grafica la "pista de despegue" financiera para 2026 y detecta insolvencia.
 
-### 3. IA Predictiva (`mi_primera_ia.py`)
-Modelo de Machine Learning entrenado con *Regresión Lineal* para predecir tendencias salariales basadas en años de experiencia.
+### 3. [🤖 IA Predictiva](./mi_primera_ia.py)
+Modelo de Machine Learning entrenado con *Regresión Lineal* para predecir sueldos.
 
 ---
-*Desarrollado por: Lalo Galván (Futuro Actuario & Data Scientist)*
+### 📬 Contacto
+* **Desarrollador:** Lalo Galván
+* **Rol:** Futuro Actuario & Data Scientist
