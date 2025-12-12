@@ -1,20 +1,30 @@
-# Calculadora de Interés Compuesto para Lalo
+import matplotlib.pyplot as plt
 
-print("--- 💰 GENERADOR DE RIQUEZA 1.0 ---")
+# 1. Datos del Tiempo (Eje X)
+meses = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']
 
-# 1. Inputs (Entrada de datos)
-# float() convierte el texto a número decimal
-capital = float(input("¿Cuánto dinero vas a invertir hoy?: $"))
-tasa = float(input("¿Cuál es la tasa de interés anual (%)?: "))
-anios = int(input("¿Por cuántos años lo dejarás crecer?: "))
+# 2. Datos del Dinero (Eje Y)
+# Empezamos con 230k.
+# Restamos aprox $12,800 al mes (promedio de tus gastos anuales / 12)
+capital = [
+    230530, 217730, 204930, 192130, 179330, 166530, 
+    153730, 140930, 128130, 115330, 102530, 89730
+]
 
-# 2. Lógica (La fórmula matemática)
-# En Python, la potencia se escribe con **
-monto_final = capital * ((1 + (tasa / 100)) ** anios)
-ganancia = monto_final - capital
+# 3. Configuración de la Gráfica
+plt.figure(figsize=(10, 6))  # Tamaño de la imagen
+plt.plot(meses, capital, marker='o', color='red', linestyle='--', linewidth=2)
 
-# 3. Output (Resultados)
-# La 'f' antes de las comillas permite meter variables dentro del texto con {}
-print("\n--- RESULTADOS ---")
-print(f"En {anios} años tendrás: ${monto_final:,.2f}")
-print(f"Tu ganancia neta fue de: ${ganancia:,.2f}")
+# Decoración (Títulos y etiquetas)
+plt.title('RUNWAY 2026: La Caída del Capital', fontsize=16, fontweight='bold')
+plt.xlabel('Meses del 2026')
+plt.ylabel('Capital Disponible (MXN)')
+plt.grid(True, alpha=0.3) # Cuadrícula de fondo
+
+# Línea de peligro (El límite de seguridad)
+plt.axhline(y=76000, color='blue', linestyle='-', label='Piso Final ($76k)')
+plt.legend()
+
+# 4. Mostrar
+print("Generando gráfica...")
+plt.show()
