@@ -26,3 +26,5 @@ Scripts auxiliares para análisis de regresión y proyección de flujo de efecti
 ## 📬 Contacto
 **Eduardo Galván**
 *Actuarial Science Student @ UDLAP*
+*edgalvanr@outlook.es*
+*221 232 5875*
