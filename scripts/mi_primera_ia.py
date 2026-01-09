@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
-print("--- 🤖 ENTRENANDO IA DE SUELDOS ---")
+print("---  ENTRENANDO IA DE SUELDOS ---")
 
 # 1. DATOS (El pasado)
 # X = Años de experiencia (Tiene que ser una matriz, por eso los corchetes dobles)
