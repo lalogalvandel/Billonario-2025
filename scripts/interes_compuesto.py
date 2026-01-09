@@ -25,6 +25,6 @@ plt.grid(True, alpha=0.3) # Cuadrícula de fondo
 plt.axhline(y=76000, color='blue', linestyle='-', label='Piso Final ($76k)')
 plt.legend()
 
-# 4. Mostrar
+
 print("Generando gráfica...")
 plt.show()
