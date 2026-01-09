@@ -7,13 +7,12 @@ interes = 0.12
 
 print("Calculando y guardando datos...")
 
-# El mismo bucle, pero ahora con memoria
+
 for i in range(1, 6):
     saldo = saldo + (aportacion * 12)
     saldo = saldo + (saldo * interes)
     
-    # ¡AQUÍ ESTÁ EL TRUCO!
-    # Guardamos el dato en la lista en lugar de solo imprimirlo
+  
     historial.append(saldo) 
 
 print("\n--- DATOS GUARDADOS EN MEMORIA ---")
