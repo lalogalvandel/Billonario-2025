@@ -1,6 +1,6 @@
 # crm.py
 # Módulo de Gestión de Relaciones con Clientes
-# Aquí está la lógica para filtrar y analizar tu base de datos.
+# Aquí está la lógica para filtrar y analizar base de datos.
 
 def filtrar_por_tipo(base_datos, tipo_buscado):
     """
@@ -25,15 +25,14 @@ def generar_reporte_financiero(base_datos, precio_boleto, meta_total_boletos):
     dinero_pendiente = 0  # Cuentas por cobrar
     
     for persona in base_datos:
-        # Asumimos que cada contacto compra 1 boleto por ahora
-        # Busca la clave "boletos", si no la encuentra, asume que es 1
+        
         cantidad = persona.get("boletos", 1)
         
         if persona["estado_pago"] == True:
             boletos_vendidos += cantidad
             dinero_recaudado += (cantidad * precio_boleto)
         else:
-            # Si no ha pagado, cuenta como deuda potencial
+           
             dinero_pendiente += (cantidad * precio_boleto)
 
     # Cálculo de faltantes
