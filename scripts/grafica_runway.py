@@ -5,7 +5,7 @@ meses = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', '
 
 # 2. Datos del Dinero (Eje Y)
 # Empezamos con 230k.
-# Restamos aprox $12,800 al mes (promedio de tus gastos anuales / 12)
+# Restamos aprox $12,800 al mes
 capital = [
     230530, 217730, 204930, 192130, 179330, 166530, 
     153730, 140930, 128130, 115330, 102530, 89730
