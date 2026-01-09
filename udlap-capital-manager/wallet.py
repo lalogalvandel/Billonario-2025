@@ -23,7 +23,7 @@ try:
 except ImportError:
     TIENE_PANDAS = False
 
-# --- NUEVA ARMA SECRETA: NUMPY ---
+# --- NUMPY ---
 try:
     import numpy as np
     TIENE_NUMPY = True
@@ -33,7 +33,7 @@ except ImportError:
 def limpiar_pantalla():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-# --- 2. SISTEMA DE DATOS (Intacto) ---
+# --- 2. SISTEMA DE DATOS  ---
 def crear_backup():
     if os.path.exists(ARCHIVO_DATOS):
         try: shutil.copy2(ARCHIVO_DATOS, ARCHIVO_BACKUP)
@@ -63,7 +63,7 @@ def guardar_datos(datos):
             json.dump(datos, archivo, indent=4)
     except: pass
 
-# --- FUNCIONES BÁSICAS (Intactas) ---
+# --- FUNCIONES BÁSICAS  ---
 def registrar_instrumento(datos):
     print("\n--- 🏦 ALTA DE NUEVO ACTIVO ---")
     nombre = input("Nombre (ej. Nu, Cetes): ")
@@ -260,7 +260,7 @@ def simular_futuro(datos):
         plt.axhline(y=0, color='red', linestyle='--')
         plt.title("Proyección Estándar"); plt.legend(); plt.show()
 
-# --- 🔥 LA JOYA DE LA CORONA: MONTECARLO ---
+# --- LA JOYA DE LA CORONA: MONTECARLO ---
 def simular_montecarlo(datos):
     limpiar_pantalla()
     print("\n--- 🎲 SIMULADOR ESTOCÁSTICO (MONTECARLO) ---")
@@ -304,7 +304,7 @@ def simular_montecarlo(datos):
     for t in range(1, meses_totales + 1):
         # Generamos rendimientos aleatorios para este mes en todos los escenarios
         # Fórmula: Retorno = (Media - 0.5*Vol^2)*dt + Vol*sqrt(dt)*Z
-        # Z es una variable aleatoria normal estándar
+        
         z = np.random.normal(0, 1, iteraciones)
         rendimiento_mes = (tasa_media - 0.5 * volatilidad**2) * dt + volatilidad * np.sqrt(dt) * z
         
