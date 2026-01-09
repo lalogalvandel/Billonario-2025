@@ -20,4 +20,4 @@ print(transacciones_grandes)
 
 # 3. GUARDAR EL REPORTE DE ALERTA
 transacciones_grandes.to_csv('semana_2/alerta_auditoria.csv', index=False)
-print("\n📁 Reporte de alertas generado: 'alerta_auditoria.csv'")
+print("\n Reporte de alertas generado: 'alerta_auditoria.csv'")
