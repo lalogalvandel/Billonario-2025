@@ -9,14 +9,14 @@ gastos_semestre = np.array([
     [41700, 25000, 20400]   # Semestre 3 (Con sorteo al final del año)
 ])
 
-print("--- TU MATRIZ DE GASTOS ---")
+print("--- MATRIZ DE GASTOS ---")
 print(gastos_semestre)
 
 # 2. Suma rápida con Numpy (Cálculo vectorial)
 # Sumamos todo el contenido de la matriz de un golpe
 total_anual = gastos_semestre.sum()
 
-print(f"\n🔥 GASTO TOTAL PROYECTADO 2026: ${total_anual:,.2f}")
+print(f"\n GASTO TOTAL PROYECTADO 2026: ${total_anual:,.2f}")
 
 # 3. ¿Sobrevives con los 230k?
 capital = 230530
