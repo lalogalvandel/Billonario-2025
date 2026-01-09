@@ -10,7 +10,6 @@ def calcular_proyeccion_rendimiento(capital_actual, tasa_anual=0.10, meses=11):
         return 0.0
         
     # Fórmula: M = C * (1 + i/n)^(n*t)
-    # Asumimos capitalización mensual (n=12) para ser realistas con SOFIPOs
     n = 12
     t = meses / 12
     
