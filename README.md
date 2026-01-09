@@ -1,30 +1,28 @@
-# Reto 2025 - 2026: Financial Engineering & AI Bootcamp
+# Financial Engineering & Portfolio
 
-![Python](https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge&logo=python&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+Repositorio de herramientas de análisis financiero y modelos estocásticos con enfoque actuarial. El proyecto central es un motor de gestión de activos (Asset Manager) que integra simulación de riesgos.
 
-Este repositorio documenta mi camino intensivo de 4 semanas para dominar **Python, Matemáticas Financieras e Inteligencia Artificial**.
 
-## 🛠️ Tecnologías Dominadas
-* **Lenguaje:** Python 3.13
-* **Análisis de Datos:** Numpy
+## 🛠️ Stack Tecnológico
+* **Lenguaje:** Python
+* **Cálculo Numérico:** NumPy (Simulación Estocástica)
+* **Reportes Financieros:** Pandas & OpenPyXL
 * **Visualización:** Matplotlib
-* **Machine Learning:** Scikit-Learn (Regresión Lineal)
-* **Control de Versiones:** Git & GitHub
 
-## 📂 Módulos del Proyecto (¡Haz clic para ver el código!)
 
-### 1. [💰 Simulador Financiero](./interes_compuesto.py)
-Calculadora de interés compuesto que proyecta el crecimiento de capital a largo plazo.
+## 📂 Módulos Principales
 
-### 2. [📉 Análisis de Runway](./grafica_runway.py)
-Script de visualización que grafica la "pista de despegue" financiera para 2026 y detecta insolvencia.
+### 1. Motor Financiero Montecarlo (v11.0)
+Herramienta CLI para gestión patrimonial y proyección de solvencia a largo plazo.
+* **Gestión de Activos:** Control de portafolio mixto (Renta Fija/Variable).
+* **Contabilidad Automática:** Generación de Balance General y Estado de Resultados en Excel.
+* **Análisis de Riesgo:** Ejecución de 1,000 escenarios estocásticos para calcular la Probabilidad de Supervivencia y VaR (Value at Risk) al 95%.
 
-### 3. [🤖 IA Predictiva](./mi_primera_ia.py)
-Modelo de Machine Learning entrenado con *Regresión Lineal* para predecir sueldos.
+### 2. Modelos Predictivos
+Scripts auxiliares para análisis de regresión y proyección de flujo de efectivo (Cash Flow Runway).
 
 ---
-### 📬 Contacto
-* **Desarrollador:** Lalo Galván
-* **Rol:** Futuro Actuario & Data Scientist
+
+## 📬 Contacto
+**Eduardo Galván**
+*Actuarial Science Student @ UDLAP*
