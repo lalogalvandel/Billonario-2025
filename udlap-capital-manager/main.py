@@ -1,6 +1,6 @@
 import data  
 import crm   
-import finance # <--- NUEVO IMPORT
+import finance 
 import os    
 
 def limpiar_pantalla():
@@ -8,9 +8,9 @@ def limpiar_pantalla():
 
 def ejecutar_sistema():
     limpiar_pantalla()
-    print("=========================================")
+    print(".........................................")
     print("   UDLAP CAPITAL MANAGER v2.0")
-    print("=========================================")
+    print(".........................................")
     
     # 1. CÁLCULOS CRM
     reporte = crm.generar_reporte_financiero(data.lista_contactos, data.PRECIO_BOLETO, data.META_TOTAL)
