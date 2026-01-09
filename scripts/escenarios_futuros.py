@@ -11,17 +11,17 @@ def calcular_riqueza(aporte_mensual):
         saldo = saldo + (aporte_mensual * 12)
         saldo = saldo + (saldo * tasa)
         
-    return saldo  # Devuelve el resultado final
+    return saldo  
 
 # --- ZONA DE PRUEBAS ---
 
-# Escenario 1: El camino actual (Sin ingresos extra)
+
 escenario_triste = calcular_riqueza(0)
 
-# Escenario 2: El plan Lalo (Freelance básico)
+
 escenario_realista = calcular_riqueza(3000)
 
-# Escenario 3: El plan Bestia (Ventas + Freelance pro)
+
 escenario_billonario = calcular_riqueza(8000)
 
 print(f"1. Si no hago nada: ${escenario_triste:,.2f}")
